@@ -3,6 +3,7 @@ package gui;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
+
 import java.util.ArrayList;
 
 public class ModelTest {
@@ -13,7 +14,7 @@ public class ModelTest {
     CnfReader cnf = Mockito.mock(CnfReader.class);
 
     @Test
-    void getAnzLiterals(){
+    void getAnzLiterals() {
         //GIVEN
         ArrayList<ArrayList<Integer>> knf1 = makeKNF1();
         ArrayList<ArrayList<Integer>> knf2 = makeKNF2();
@@ -31,10 +32,16 @@ public class ModelTest {
     @Test
     void getKNF() throws Exception {
         //GIVEN
+        String test = "src/test/resources/TestFiles/Test_CNF.txt";
+        ArrayList<ArrayList<Integer>> result = new ArrayList<>();
 
         //WHEN
+        result = model.getKNF(test);
 
         //THEN
+        Assertions.assertEquals(2, result.size());
+        Assertions.assertEquals(50, result.get(0).get(0));
+        Assertions.assertEquals(44, result.get(1).get(2));
     }
 
     @Test

@@ -1,0 +1,10 @@
+c FILE: Test_CNF.cnf
+c
+c SOURCE: Teamprojekt
+c
+c DESCRIPTION: Wird für den UnitTest 'getKNF' in der Klasse 'ModelTest' verwendet
+c
+c
+p cnf 2 6
+50 62 92 0
+67 -9 44 0

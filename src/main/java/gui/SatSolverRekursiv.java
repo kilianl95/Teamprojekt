@@ -4,30 +4,30 @@ import java.util.ArrayList;
 
 public class SatSolverRekursiv {
   /**
-   * Zählt die Rekursionsschritte.
+   * Zaehlt die Rekursionsschritte.
    */
   public static int rek_counter = 0;
   /**
-   * Dient zur Drosselung im Erklärmodus - wird true, falls der
-   * RadioButton 'Erklärmodus' aktiviert wird.
+   * Dient zur Drosselung im Erklaermodus - wird true, falls der
+   * RadioButton 'Erklaermodus' aktiviert wird.
    */
   public static boolean delayMode = false;
   /**
-   * Verzögerungszeit für den Erklärmodus - lässt sich über den
+   * Verzoegerungszeit für den Erklaermodus - laesst sich ueber den
    * Slider festlegen.
    */
   public static long delayTime = 0;
   /**
-   * Enthält die einzelnen Positionen für den Pseudo-Code (1-12).
+   * Enthaelt die einzelnen Positionen für den Pseudo-Code (1-12).
    */
   public static int position = 0;
   /**
-   * Notwendig für Position 4 und 7, da es hier zwei unterschiedliche Ausgänge
+   * Notwendig für Position 4 und 7, da es hier zwei unterschiedliche Ausgaenge
    * gibt und Markierung bei der Visualisierung sonst nicht richtig gesetzt wird.
    */
   public static int positionEnd = 0;
   /**
-   * Gewähltes Literal durch den Algorithmus. Hier: Es wird immer der nächstmögliche
+   * Gewaehltes Literal durch den Algorithmus. Hier: Es wird immer der naechstmoegliche
    * Wert aus der ArrayList genommen. Static, weil der Controller für die TextArea darauf
    * zugreifen muss.
    */

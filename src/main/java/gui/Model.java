@@ -61,9 +61,9 @@ public class Model {
     }
 
     /**
-     * Baut die KNF durch Zusammenfügen der Methode aus dem CnfReader und einer gültigen .cnf-Datei.
+     * Baut die KNF durch Zusammenfuegen der Methode aus dem CnfReader und einer gueltigen .cnf-Datei.
      *
-     * @param path Gültiger Pfad-String zu einer .cnf-Datei.
+     * @param path Gueltiger Pfad-String zu einer .cnf-Datei.
      * @return KNF als ArrayList
      */
     public ArrayList<ArrayList<Integer>> getKNF(String path) throws Exception {

@@ -13,8 +13,8 @@ public class CnfReader {
 	}
 
     /**
-     * Überprüft, ob der String die korrekte Syntax einer Klausel erfüllt.
-     * @param line String, der überprüft werden soll
+     * Ueberprueft, ob der String die korrekte Syntax einer Klausel erfuellt.
+     * @param line String, der ueberprueft werden soll
      * @returns true, falls alle chars des Strings einer Zahl zwischen 0 und 9, einem '-' oder einem
      * Leerzeichen entsprechen.
      *
@@ -31,8 +31,8 @@ public class CnfReader {
 
     /**
      * Konvertiert den eingelesenen String in eine Klausel, d.h., die einzelnen Bestandteile des
-     * Strings werden überprüft, ob sie in das entsprechende Muster passen und falls ja, in eine
-     * ArrayList eingefügt.
+     * Strings werden ueberprueft, ob sie in das entsprechende Muster passen und falls ja, in eine
+     * ArrayList eingefuegt.
      * @param line String, der sich aus durch Leerzeichen gertrennte Zahlen zusammensetzt
      * @return Klausel - Eine ArrayList mit den Zahlen aus dem String
      */
@@ -51,7 +51,7 @@ public class CnfReader {
     }
 
     /**
-     * Fügt eine Klausel in die KNF ein.
+     * Fuegt eine Klausel in die KNF ein.
      * @param s ArrayList mit Integern
      */
     public void addToKNF(ArrayList<Integer> s) {

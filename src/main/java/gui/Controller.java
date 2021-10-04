@@ -138,20 +138,20 @@ public class Controller {
 
                     updateProgress(1, 1);
 
-
+                    // TODO Codierung bzgl. Sonderzeichen checken
                     Platform.runLater(new Runnable() {
                         public void run() {
                             if (bool) {
-                                ergebnis.setText("Erfüllbar");
+                                ergebnis.setText("Erf\u00fcllbar");
                             } else {
-                                ergebnis.setText("Nicht Erfüllbar");
+                                ergebnis.setText("Nicht Erf\u00fcllbar");
                             }
 
                             runButton.setDisable(false);
                             importCNF.setDisable(false);
                             stopButton.setDisable(true);
 
-                            infoArea.setText(infoArea.getText() + "\n" + "\n" + "Gewählte Literale in richtiger Reihenfolge: " + "\n" + model.getLiteralList());
+                            infoArea.setText(infoArea.getText() + "\n" + "\n" + "Gew\u00e4hlte Literale in richtiger Reihenfolge: " + "\n" + model.getLiteralList());
 
                         }
                     });
@@ -183,7 +183,7 @@ public class Controller {
 
                     while(thread.isAlive()){
                         if(SatSolverRekursiv.position == 6 || SatSolverRekursiv.position == 9) {
-                            updateMessage("Folgendes Literal wurde jetzt gewählt: " + SatSolverRekursiv.literal);
+                            updateMessage("Folgendes Literal wurde jetzt gew\u00e4hlt: " + SatSolverRekursiv.literal);
                         }
                     }
                     return null;

@@ -4,6 +4,7 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 public class MainGUI extends Application {
@@ -23,7 +24,7 @@ public class MainGUI extends Application {
         Model model = new Model(solver);
         controller.setModel(model);
 
-
+        primaryStage.getIcons().add(new Image(this.getClass().getResourceAsStream("/satsolver-icon-jar.png")));
         Scene scene = new Scene(root, 1280, 844);
 
         primaryStage.setScene(scene);

@@ -271,17 +271,17 @@
                         <Font name="Work Sans Medium" size="16.0" />
                      </font>
                   </Button>
-                  <ToggleButton fx:id="pauseButton" disable="true" mnemonicParsing="false" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #4cbebe;" text="PAUSE" textFill="WHITE">
+                  <Button fx:id="stopButton" disable="true" mnemonicParsing="false" onAction="#handleStopButton" prefHeight="39.0" prefWidth="87.0" style="-fx-background-color: #949494;" text="STOP" textFill="WHITE">
                      <font>
                         <Font size="16.0" />
                      </font>
-                  </ToggleButton>
+                  </Button>
                </children>
                <VBox.margin>
                   <Insets top="20.0" />
                </VBox.margin>
             </HBox>
-            <Button fx:id="stopButton" disable="true" mnemonicParsing="false" onAction="#handleStopButton" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #949494;" text="Abbrechen" textFill="WHITE" />
+<!--            <Button fx:id="pauseButton" disable="true" mnemonicParsing="false" prefHeight="33.0" prefWidth="85.0" style="-fx-background-color: #949494;" text="Abbrechen" textFill="WHITE" />-->
             <Label text="Informationsfenster" textFill="#1c355a">
                <VBox.margin>
                   <Insets top="30.0" />

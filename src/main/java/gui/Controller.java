@@ -31,8 +31,8 @@ public class Controller {
     private ProgressBar progressBar;
     @FXML
     private Button runButton, stopButton, importCNF;
-    @FXML
-    private ToggleButton pauseButton;
+    //@FXML
+    //private ToggleButton pauseButton;
     @FXML
     private ToggleGroup modeGroup;
     @FXML
@@ -76,7 +76,7 @@ public class Controller {
 
     public void runStateGUI() {
         stopButton.setDisable(false);
-        pauseButton.setDisable(false);
+        //pauseButton.setDisable(false);
         runButton.setDisable(true);
         importCNF.setDisable(true);
         ergebnis.setText("");
@@ -90,7 +90,7 @@ public class Controller {
         runButton.setDisable(false);
         importCNF.setDisable(false);
         stopButton.setDisable(true);
-        pauseButton.setDisable(true);
+        // pauseButton.setDisable(true);
         SatSolverRekursiv.rek_counter = 0;
         SatSolverRekursiv.position = 0;
         progressBar.progressProperty().unbind();

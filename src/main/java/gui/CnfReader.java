@@ -83,7 +83,7 @@ public class CnfReader {
             if (isClause(line)) {
                 addToKNF(makeLineToClause(line));
             }
-            //read next line
+            // read next line
             line = reader.readLine();
         }
         return knf;

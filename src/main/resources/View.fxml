@@ -9,28 +9,20 @@
    <children>
       <Pane prefHeight="153.0" prefWidth="677.0">
          <children>
-            <Label layoutX="32.0" layoutY="30.0" styleClass="h1" text="SAT Solver" textFill="#1c355a">
+            <Label layoutX="32.0" layoutY="30.0" styleClass="h1" text="SAT-Solver" textFill="#1c355a">
                <font>
                   <Font name="Work Sans SemiBold" size="40.0" />
                </font></Label>
-            <Label layoutX="32.0" layoutY="91.0" text="Laden Sie eine .cnf Datei hoch." textFill="#737b7d" wrapText="true">
+            <Label layoutX="32.0" layoutY="91.0" text="Laden Sie eine .cnf-Datei hoch." textFill="#737b7d" wrapText="true">
                <font>
                   <Font name="Work Sans Regular" size="13.0" />
                </font></Label>
             <ButtonBar layoutX="17.0" layoutY="100.0" nodeOrientation="LEFT_TO_RIGHT" prefHeight="59.0" prefWidth="122.0">
                <buttons>
-                  <Button fx:id="importCNF" mnemonicParsing="false" onAction="#handleImportButton" prefHeight="25.0" prefWidth="106.0" text="Import CNF">
+                  <Button fx:id="importCNF" mnemonicParsing="false" onAction="#handleImportButton" prefHeight="25.0" prefWidth="106.0" text="Import .cnf">
                      <font>
                         <Font name="Work Sans Regular" size="12.0" />
                      </font></Button>
-<!--                  <Button fx:id="importMapping" layoutX="129.0" layoutY="17.0" mnemonicParsing="false" styleClass="button" text="Import Mapping">-->
-<!--                     <font>-->
-<!--                        <Font name="Work Sans Regular" size="12.0" />-->
-<!--                     </font></Button>-->
-<!--                  <Button fx:id="saveModel" disable="true" layoutX="145.0" layoutY="17.0" mnemonicParsing="false" text="Save Model">-->
-<!--                     <font>-->
-<!--                        <Font name="Work Sans Regular" size="12.0" />-->
-<!--                     </font></Button>-->
                </buttons>
             </ButtonBar>
             <Label layoutX="154.0" layoutY="123.0" text="Hochgeladene Datei:" textFill="#1c355a">
@@ -194,13 +186,6 @@
                   <Font name="Work Sans Medium" size="17.5" />
                </font>
             </Label>
-<!--            <ToggleButton mnemonicParsing="false" text="Mapping aktivieren">-->
-<!--               <VBox.margin>-->
-<!--                  <Insets bottom="25.0" />-->
-<!--               </VBox.margin>-->
-<!--               <font>-->
-<!--                  <Font name="Work Sans Regular" size="12.0" />-->
-<!--               </font></ToggleButton>-->
             <Label layoutX="10.0" layoutY="44.0" text="Wählen Sie einen Algorithmus" textFill="#737b7d">
                <VBox.margin>
                   <Insets bottom="10.0" />
@@ -243,9 +228,6 @@
                <toggleGroup>
                   <ToggleGroup fx:id="modeGroup" />
                </toggleGroup>
-<!--               <VBox.margin>-->
-<!--                  <Insets bottom="5.0" />-->
-<!--               </VBox.margin>-->
             </RadioButton>
             <RadioButton fx:id="explainToggle" mnemonicParsing="false" prefHeight="21.0" prefWidth="138.0" text="Erklärmodus" textFill="#737b7d" toggleGroup="$modeGroup">
                      <font>
@@ -258,7 +240,7 @@
                   <Insets bottom="25.0" />
                </VBox.margin>
             </RadioButton>
-            <Label text="Wählen Sie eine Verzögerungszeit für den Erklärmodus (in Sekunden):" textFill="#737b7d">
+            <Label fx:id="labelTime" disable="true" text="Wählen Sie eine Verzögerungszeit für den Erklärmodus (in Sekunden):" textFill="#737b7d">
                <VBox.margin>
                   <Insets bottom="10.0" />
                </VBox.margin>

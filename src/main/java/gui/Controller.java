@@ -24,7 +24,7 @@ public class Controller {
 
     //Elemente aus der FXML-Datei:
     @FXML
-    private Label ausgabeCNF, ergebnis, rekSteps, literalLabel;
+    private Label ausgabeCNF, ergebnis, rekSteps, literalLabel, labelTime;
     @FXML
     private Label pos1, pos2, pos3, pos4, pos5, pos6, pos7, pos8, pos9, pos10, pos11, pos12;
     @FXML
@@ -50,9 +50,11 @@ public class Controller {
             if(turboToggle.isSelected()){
                 SatSolverRekursiv.delayMode = false;
                 timeSlider.setDisable(true);
+                labelTime.setDisable(true);
             } else{
                 SatSolverRekursiv.delayMode = true;
                 timeSlider.setDisable(false);
+                labelTime.setDisable(false);
             }
         });
 
@@ -138,7 +140,6 @@ public class Controller {
 
                     updateProgress(1, 1);
 
-                    // TODO Codierung bzgl. Sonderzeichen checken
                     Platform.runLater(new Runnable() {
                         public void run() {
                             if (bool) {
